@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="header container">
+        <header class="header__wrapper">
+          <a href="/"
+            ><img src="./src/images/logo.webp" alt="logo" class="logo"
+          /></a>
+
+          <div class="burger_wrapper" id="js-menu-btn">
+            <img src="./src/images/burger.png" alt="burger" class="burger" />
+          </div>
+          <dialog class="nav__burger-wrapper hidden">
+            <nav>
+              <ul class="nav__burger-list">
+                <li class="nav__burger-item"><a href="#">EXERCICES</a></li>
+                <li class="nav__burger-item"><a href="#">COMMUNITY</a></li>
+                <li class="nav__burger-item"><a href="#">PRICING</a></li>
+                <li class="nav__burger-item"><a href="#">ABOUT US</a></li>
+              </ul>
+            </nav>
+            <div class="nav__auth-wrapper">
+              <button class="login">LOGIN</button>
+              <button class="signIn">SIGN IN</button>
+            </div>
+          </dialog>
+          <div class="nav__wrapper">
+            <nav>
+              <ul class="nav__list">
+                <li class="nav__item current">Latest training <span></span></li>
+                <li class="nav__item">Our team</li>
+                <li class="nav__item">Discover</li>
+              </ul>
+            </nav>
+            <div class="nav__auth-wrapper">
+              <button class="login">LOGIN</button>
+              <button class="signIn">SIGN IN</button>
+            </div>
+          </div>
+        </header>
+      </div>
+      <div class="main">
+        <section class="container about__wrapper mobile">
+          <div class="woman-photo__wrapper">
+            <img src="./src/images/woman.png" alt="woman" class="woman-photo" />
+          </div>
+          <div class="about">
+            <h1 class="section_title text-center title__about">4 week</h1>
+            <h2 class="sub_title text-center sub_title__about">Workout Plan</h2>
+            <p class="text text-center text__about">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+              fringilla, lacus eget consequat tincidunt, lectus ex bibendum
+              libero, eget iaculis quam arcu quis mauris. Donec ex neque,
+              egestas in faucibus. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Maecenas
+            </p>
+            <button class="button button__about">try for free</button>
+          </div>
+        </section>
+        <section class="container about__wrapper desctop">
+          <div class="about__content">
+            <h1 class="section_title title__about">4 week</h1>
+            <h2 class="sub_title sub_title__about">Workout Plan</h2>
+            <p class="text__about">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+              fringilla, lacus eget consequat tincidunt, lectus ex bibendum
+              libero, eget iaculis quam arcu quis mauris. Donec ex neque,
+              egestas in faucibus. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Maecenas
+            </p>
+            <div class="about__button-wrapper">
+              <button class="button about__button">TRY FOR FREE</button>
+              <button class="button about__button accent">TRY FOR FREE</button>
+            </div>
+          </div>
+          <div class="about__woman-desctop">
+            <img src="./src/images/woman.png" alt="woman" />
+          </div>
+          <div>
+            <ul class="about__list">
+              <li class="about__list-item">
+                <p class="about__list-title">GET INSPIRED</p>
+                <p class="about__list-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Maecenas fringil. lacus eget consequat tincidunt, lectus ex.
+                </p>
+                <div>
+                  <a href="#" class="about__link"
+                    ><span class="about__link-icon"
+                      ><svg class="about__icon">
+                        <use
+                          href="./src/images/sprite.svg#icon-arrow-up-right"
+                        ></use>
+                      </svg>
+                    </span>
+                    Explore More
+                  </a>
+                </div>
+              </li>
+              <li class="about__list-item">
+                <p class="about__list-title">CHALLENGE YOURSELF</p>
+                <p class="about__list-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Maecenas fringil. lacus eget consequat tincidunt, lectus ex.
+                </p>
+                <div>
+                  <a href="#" class="about__link"
+                    ><span class="about__link-icon"
+                      ><svg class="about__icon">
+                        <use
+                          href="./src/images/sprite.svg#icon-arrow-up-right"
+                        ></use>
+                      </svg>
+                    </span>
+                    Explore More
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="training container">
+          <div class="training__header">
+            <h2 class="section_title text-center title__training">
+              latest training <span class="title__line"></span>
+            </h2>
+            <span class="training__header-detail">SEE MORE HERE</span>
+          </div>
+          <ul class="training__list">
+            <li class="training__list-item">
+              <div class="training__image-wrapper">
+                <img
+                  src="./src/images/run.webp"
+                  alt="running"
+                  class="training__image"
+                />
+              </div>
+              <div class="training__info-wrapper">
+                <h3 class="training__list-title">running</h3>
+                <p class="training__list-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Maecenas fringilla, lacus eget consequat
+                </p>
+                <button class="button desctop training_button">see more</button>
+              </div>
+            </li>
+            <li class="training__list-item">
+              <div class="training__image-wrapper">
+                <img
+                  src="./src/images/lifting.webp"
+                  alt="lifting"
+                  class="training__image"
+                />
+              </div>
+              <div class="training__info-wrapper">
+                <h3 class="training__list-title">lifting</h3>
+                <p class="training__list-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Maecenas fringilla, lacus eget consequat
+                </p>
+                <button class="button desctop training_button">see more</button>
+              </div>
+            </li>
+            <li class="training__list-item">
+              <div class="training__image-wrapper">
+                <img
+                  src="./src/images/yoga.webp"
+                  alt="yoga"
+                  class="training__image"
+                />
+              </div>
+              <div class="training__info-wrapper">
+                <h3 class="training__list-title">yoga</h3>
+                <p class="training__list-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Maecenas fringilla, lacus eget consequat
+                </p>
+                <button class="button desctop training_button">see more</button>
+              </div>
+            </li>
+          </ul>
+          <button class="button mobile">see more</button>
+        </section>
+        <section class="container team">
+          <h2 class="section_title text-center title__team">
+            our team <span class="title__line"></span>
+          </h2>
+          <ul class="team__list">
+            <li class="team__list-item">
+              <div class="team__list-photoWrapper">
+                <img src="./src/images/jamiesFord.png" alt="" class="ford" />
+              </div>
+              <div class="team__list-info-wrapper">
+                <h3 class="team__list-title">jamies ford</h3>
+                <p class="team__list-position">Trainer</p>
+                <p class="team__list-position-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Maecenas fringilla, lacus eget consequat
+                </p>
+                <button class="button desctop">see more</button>
+              </div>
+            </li>
+            <li class="team__list-item">
+              <div class="team__list-photoWrapper">
+                <img src="./src/images/eddieSmith.png" alt="" class="smith" />
+              </div>
+              <div class="team__list-info-wrapper">
+                <h3 class="team__list-title">eddie smith</h3>
+                <p class="team__list-position">Trainer</p>
+                <p class="team__list-position-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Maecenas fringilla, lacus eget consequat
+                </p>
+                <button class="button desctop">see more</button>
+              </div>
+            </li>
+            <li class="team__list-item">
+              <div class="team__list-photoWrapper">
+                <img src="./src/images/annieSummer.png" alt="" class="summer" />
+              </div>
+              <div class="team__list-info-wrapper">
+                <h3 class="team__list-title">annie summer</h3>
+                <p class="team__list-position">Trainer</p>
+                <p class="team__list-position-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Maecenas fringilla, lacus eget consequat
+                </p>
+                <button class="button desctop">see more</button>
+              </div>
+            </li>
+            <li class="team__list-item">
+              <div class="team__list-photoWrapper">
+                <img src="./src/images/emilySea.png" alt="" class="sea" />
+              </div>
+              <div class="team__list-info-wrapper">
+                <h3 class="team__list-title">emily sea</h3>
+                <p class="team__list-position">Trainer</p>
+                <p class="team__list-position-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Maecenas fringilla, lacus eget consequat
+                </p>
+                <button class="button desctop">see more</button>
+              </div>
+            </li>
+          </ul>
+          <button class="button mobile">see more</button>
+        </section>
+        <section class="plan">
+          <div class="container plan__wrapper">
+            <h2 class="text-center plan__title">DISCOVER YOUR POTENCIAL</h2>
+            <p class="text text-center plan__text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum. text of the printing and typesetting
+            </p>
+            <div class="plan__button-wrapper">
+              <button class="button plan__button">view plans</button>
+              <button class="button plan__button dark">learn more</button>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer class="footer container">
+        <div class="footer__wrapper">
+          <div class="footer__info">
+            <div class="footer__logo-wrapper">
+              <a href="/"><img src="./src/images/logo.webp" alt="logo" /></a>
+            </div>
+            <p class="text text__footer">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum.
+            </p>
+            <ul class="footer__socialList">
+              <li class="footer__socialList-item">
+                <a href="https://www.facebook.com/?locale=uk_UA" target="_blank"
+                  ><svg class="icon-social">
+                    <use href="./src/images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__socialList-item">
+                <a href="https://www.instagram.com/" target="_blank"
+                  ><svg class="icon-social">
+                    <use href="./src/images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__socialList-item">
+                <a href="https://twitter.com/?lang=uk" target="_blank">
+                  <svg class="icon-social">
+                    <use href="./src/images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__socialList-item">
+                <a href="https://www.whatsapp.com/?lang=uk_UA" target="_blank">
+                  <svg class="icon-social">
+                    <use href="./src/images/sprite.svg#icon-whatsapp"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <form class="form" action="/subscribe">
+            <p class="form-title text-center">subscribe to our newsletter</p>
+            <input
+              type="email"
+              placeholder="Type your email here"
+              class="form-input"
+            />
+            <button class="button">subscribe</button>
+          </form>
+
+          <div class="footer__links">
+            <ul class="links__list">
+              <li class="links__list-main">info</li>
+              <li class=""><a href="#" class="links__list-item">About</a></li>
+              <li class=""><a href="#" class="links__list-item">Careers</a></li>
+              <li class=""><a href="#" class="links__list-item">Press</a></li>
+              <li class="">
+                <a href="#" class="links__list-item">Product Updates</a>
+              </li>
+            </ul>
+            <ul class="links__list">
+              <li class="links__list-main">get in touch</li>
+              <li><a href="#" class="links__list-item">About Us</a></li>
+              <li><a href="#" class="links__list-item">Support</a></li>
+              <li><a href="#" class="links__list-item">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright__wrapper">
+          <p class="text-copyright">
+            Copyright <span>&copy;</span> 2021 Enisson Lemos | All right
+            reserved
+          </p>
+          <p class="text-center text-copyright">Terms & Conditions</p>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
